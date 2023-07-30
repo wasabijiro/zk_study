@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:circuit": "cd circuit && circom circuit.circom --r1cs --wasm --sym",
+    "print:circuit": "cd circuit && snarkjs r1cs print circuit.r1cs circuit.sym",
+    "info:circuit": "cd circuit && snarkjs r1cs info circuit.r1cs"
   },
   "author": "wasabi",
   "license": "ISC"
