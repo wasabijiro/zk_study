@@ -38,4 +38,5 @@ Final Beacon
 ```bash
 snarkjs powersoftau beacon pot12_0002.ptau pot12_beacon.ptau 0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f 10 -n="Final Beacon"
 snarkjs powersoftau prepare phase2 pot12_beacon.ptau pot12_final.ptau -v
+snarkjs powersoftau verify pot12_final.ptau
 ```
