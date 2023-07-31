@@ -3,14 +3,16 @@
 npm run compile:circuit
 ```
 
-## view constraint info
-```bash
-npm run print:circuit
-```
-
 ## view circuit info
+- circuitの情報を見る
 ```bash
 npm run info:circuit
+```
+
+## view constraint info
+- 回路の制約を見る
+```bash
+npm run print:circuit
 ```
 
 ## zk-SNARK setup, MPC Ceremony
@@ -34,7 +36,7 @@ snarkjs powersoftau verify pot12_0002.ptau
 
 Final Beacon
 - `beacon`: 最終的なランダム性を追加
-- `prepare phase2`: 第2フェーズの準備を行う。第2フェーズでは、特定の計算問題（「回路」）に対するセットアップが行われる。
+- `prepare phase2`: 第2フェーズの準備を行う。第2フェーズでは、特定の計算問題（「回路」）に対するセットアップが行われる。circuit の証明鍵と検証鍵を生成するために利用する最終的なptauファイルを生成
 ```bash
 snarkjs powersoftau beacon pot12_0002.ptau pot12_beacon.ptau 0102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f 10 -n="Final Beacon"
 snarkjs powersoftau prepare phase2 pot12_beacon.ptau pot12_final.ptau -v
