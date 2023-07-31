@@ -6,10 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:circuit": "cd circuit && circom circuit.circom --r1cs --wasm --sym",
-    "info:circuit": "cd circuit && snarkjs r1cs info circuit.r1cs",
     "print:circuit": "cd circuit && snarkjs r1cs print circuit.r1cs circuit.sym",
-    "setup" : "cd circuit && snarkjs powersoftau new bn128 12 pot12_0000.ptau -v"
+    "info:circuit": "cd circuit && snarkjs r1cs info circuit.r1cs",
+    "setup" : "cd circuit && snarkjs powersoftau new bn128 12 pot12_0000.ptau"
   },
+  "keywords": [],
   "author": "wasabi",
   "license": "ISC"
 }
