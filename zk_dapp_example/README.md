@@ -14,5 +14,7 @@ pnpm dev
 ```
 
 ## Ref
+Github
 https://github.com/ytham/zk_example_dapp
+Medium
 https://medium.com/@yujiangtham/writing-a-zero-knowledge-dapp-fd7f936e2d43
