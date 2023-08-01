@@ -50,3 +50,6 @@ typechain-types
 cache
 artifacts
 
+truffle/build
+
+

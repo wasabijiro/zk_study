@@ -34,12 +34,37 @@ wires: 13
 labels: 51
 ```
 
-## Contracts
-FoundryはhardhatのようなDappの開発環境を提供してくれるRust製のツール
-- Forge: アプリのセットアップ/ビルド/テストを行うためのツール
-- Cast: スマートコントラクトとの通信を行うクライアント
-- Anvil: ローカル開発用のローカルノード
+## Deploy Contract
+Truffleを使用
 ```bash
-curl -L https://foundry.paradigm.xyz | bash
-foundryup
+Deploying 'PlonkVerifier'
+   -------------------------
+   > transaction hash:    0x79fcef0bfbaced4b55c4c5cd14333a64e2036defe0e4c687975a55c3798f7edd
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x502066A3d06eF9c874e0f3C06A2784941e67bA35
+   > block number:        9444183
+   > block timestamp:     1690886316
+   > account:             0x0F08e3cB454ad1fE1fF7387e950139E4bd36d926
+   > balance:             0.189890004979951678
+   > gas used:            1546740 (0x1799f4)
+   > gas price:           2.522658284 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00390189647419416 ETH
 ```
+https://goerli.etherscan.io/address/0x502066a3d06ef9c874e0f3c06a2784941e67ba35
+```bash
+Deploying 'SimpleMultiplier'
+   ----------------------------
+   > transaction hash:    0x53007abac5534ce0e54b2a2f6ddbae6ac3cf7f63349f120f89d9c97777ff618f
+   > Blocks: 0            Seconds: 4
+   > contract address:    0xdc86d58643A41608b2A0e6BAb09D6bD48cd810fB
+   > block number:        9444184
+   > block timestamp:     1690886328
+   > account:             0x0F08e3cB454ad1fE1fF7387e950139E4bd36d926
+   > balance:             0.188715547524583486
+   > gas used:            465588 (0x71ab4)
+   > gas price:           2.522525184 gwei
+   > value sent:          0 ETH
+   > total cost:          0.001174457455368192 ETH
+```
+https://goerli.etherscan.io/address/0xdc86d58643a41608b2a0e6bab09d6bd48cd810fb
