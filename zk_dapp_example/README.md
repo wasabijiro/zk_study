@@ -33,3 +33,13 @@ private outputs: 0
 wires: 13
 labels: 51
 ```
+
+## Contracts
+FoundryはhardhatのようなDappの開発環境を提供してくれるRust製のツール
+- Forge: アプリのセットアップ/ビルド/テストを行うためのツール
+- Cast: スマートコントラクトとの通信を行うクライアント
+- Anvil: ローカル開発用のローカルノード
+```bash
+curl -L https://foundry.paradigm.xyz | bash
+foundryup
+```
